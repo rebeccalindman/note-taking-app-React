@@ -1,0 +1,242 @@
+
+body{background-color: whitesmoke;
+font-family: monospace, Courier, 'Courier New';
+font-size: 0.8rem;
+color: black;
+}
+
+h1{font-size: 2.5rem; letter-spacing: 0.3rem;}
+
+h2{
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+h3{
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+}
+
+.welcome-text not #about-welcome-text{
+    position: absolute;
+    top: 350px;
+}
+
+.welcome-text, .category-text h3 {scale: 0.8}
+
+
+.icon-linkedin{padding: 5px;}
+
+
+/*** HEADER ***/
+header{
+ position: relative;
+ margin: 0;
+ background-color: rgb(56, 66, 75);
+ padding: 20px;
+ text-align: center;
+ color: whitesmoke;
+}
+
+header h1:hover{color: black;}
+
+
+
+.pages-menu a{
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+
+.pages-menu a:hover{
+    background-color: rgb(238, 205, 37);
+    padding: 3px;
+    color: black;
+    border-radius: 4px;
+}
+
+/**** MAIN CONTENT ****/
+.wrapper {position: relative;}
+
+/*** left sidebar ***/
+.left-sidebar {
+    width: 100px;
+    min-height: 800px;
+    position: absolute;
+    left:0;
+    top: 0;
+    bottom: 0; 
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(238, 205, 37);
+    text-align: center;
+    font-size: 0.7rem; 
+}
+
+/* .left-sidebar p {word-wrap: break-word;} */
+
+.left-sidebar nav {
+    text-align: left;
+    position: relative;
+    padding: 10px 0;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px;
+}
+
+.icon-row {margin-bottom: 15px;} /* Adjust the spacing between rows */
+
+
+.icon-list {
+/*     display: block; */
+    padding: 0;
+    text-align: center;
+/*     text-transform: lowercase; */
+} 
+
+
+.icon-navigation {
+    text-decoration: none; /* removes underline between icons */
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle;
+    
+}
+
+.icon-navigation:hover {
+    background-color: rgb(207, 178, 30);
+    border-radius: 4px;
+}
+
+/*** content  ***/
+.content{
+    margin-left: 120px; /* space for sidebar */
+    text-align: center;
+    min-height: 800px;
+}
+
+.box-container {
+    display: inline-block; /* Allow inline-block elements */
+    text-align: center; 
+    width: 100%; /* full width */
+    margin-top: 5px;
+    min-height: 400px;
+}
+
+.box, .picture-box, .about-box{
+    position: relative;
+    vertical-align: middle;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 10px 5px 10px 5px; /* Space around each box */
+    /* fill */
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    /* border */
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    box-shadow: 0 0 5px rgba(65, 65, 65, 0.189);
+}
+/* PICTURE-BOX */
+.picture-box {display: inline-block;}
+.picture-box img {max-width: 100%;}
+
+/* ABOUT-BOX */
+.about-box{
+    max-width: 400px; /* Adjust based on your needs */
+    min-height: 400px;
+}
+
+.box nav {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    white-space: nowrap; /* Prevents the items from wrapping onto the next line */
+}
+
+.icon-navigation {
+    display: inline-block; 
+    margin-left: 10px; /*  space between icons */
+    text-decoration: none; 
+}
+
+/****** FOOTER *******/
+footer{
+    background-color: rgb(56, 66, 75);
+    padding: 10px;
+    color: whitesmoke;
+    /* placement */
+    position: relative;  
+    text-align: center;
+}
+
+footer nav a{
+ color: whitesmoke;
+ text-decoration: none;
+}
+
+/***** MEDIA ADAPTATION *****/
+
+/* @media (max-width: 480px) {
+
+} */
+
+@media (min-width: 481px) {
+    h2 {letter-spacing: 0.5rem; font-size: 1.1rem; margin-top: 10px;} 
+    h3 {font-size: 1rem; margin-top: 40px;}
+    /* p {font-size: 1.1rem;} */
+
+.welcome-text{
+    position: relative;
+    top: 0;
+    scale:1;
+}
+
+#category-text h3{
+    scale:1;
+}
+
+    .left-sidebar{width: 200px;}
+    .left-sidebar p {font-size: 1rem; }
+
+    .content{margin-left: 220px;
+        min-height: 800px;}
+
+    .box {max-width: 400px;
+        display: inline-block; 
+        margin: 10px 2%;}
+    .box-container{margin-top: 10px;}
+    
+    .about-box{margin: 10px 5% 10px 5%;}
+
+    .content{max-width: 100%;} 
+
+    .icon-list {
+        margin-left: 10px;
+        display: block;
+        display: inline-block;
+        font-size: 0.9rem;
+        line-height: 15px;
+    } 
+}
+
+@media (min-width: 801px){
+    .picture-box {width: 40%;}
+}
+
+@media (min-width: 1025px){
+    .box {margin: 10px 1%; }/* Add margins to space out the boxes */
+   .box-container{
+    margin-top: 50px;
+   }
+    .picture-box {width: 30%;}
+    .content{max-width: 2600px;}
+
+}
