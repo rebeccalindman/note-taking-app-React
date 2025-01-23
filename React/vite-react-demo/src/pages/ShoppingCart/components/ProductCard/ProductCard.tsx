@@ -1,5 +1,4 @@
 import "./ProductCard.css";
-import CartIcon from "../../../../assets/Icons/CartIcon";
 import React from "react";
 
 interface ProductCardProps {

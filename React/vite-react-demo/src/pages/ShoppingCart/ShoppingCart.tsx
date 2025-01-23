@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './ShoppingCart.css'
 import SecondHeader from './components/SecondHeader/SecondHeader'
 import ProductCard from './components/ProductCard/ProductCard'
@@ -14,6 +14,7 @@ const ShoppingCart = () => {
       name: string;
       description: string;
       price: number;
+      quantity?: number | undefined;
     };
   
     const handleAddToCart = (productId: string) => {
@@ -64,6 +65,11 @@ const ShoppingCart = () => {
         description: "This is the description for Product 2.",
       },
     ];
+
+    const cartDetails = cart.map((item) => {
+      const product = products.find((product) => product.id === item.id);
+      return product ? { ...product, quantity: item.quantity } : undefined;
+    }).filter(Boolean) as typeof products;
   
     return (
       <>
@@ -92,7 +98,7 @@ const ShoppingCart = () => {
         <CartModal
             isOpen={isCartModalOpen}
             onClose={() => setIsCartModalOpen(false)} // Close modal
-            products={cartDetails as Product[]} // Pass combined cart details
+            products={cartDetails} // Pass combined cart details
         />
       </>
     );

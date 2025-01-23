@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 /**
  * A responsive checkbox component

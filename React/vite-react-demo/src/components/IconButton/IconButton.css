@@ -8,12 +8,9 @@
 }
 
 .icon-button:hover {
-   /*  background-color: #ec5050; */
+    background-color: #ec5050;
 }
 
-.icon-button svg path {
-    stroke: #fff;
-}
 
 .icon-button svg {
     width: 24px;

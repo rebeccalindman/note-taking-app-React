@@ -1,5 +1,4 @@
 import './ToDoItem.css';
-import React from 'react';
 
 import IconButton from '../../../../../../vite-react-demo/src/components/IconButton/IconButton';
 import TrashCanIcon from '../../../../../../vite-react-demo/src/assets/icons/TrashCanIcon';
