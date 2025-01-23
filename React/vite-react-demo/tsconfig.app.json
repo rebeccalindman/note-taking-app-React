@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src", "src/pages/AdaLovelace/components/About", "src/pages/ToDo/components/AddToDo", "src/pages/ToDo/components/ToDoItem"]
 }

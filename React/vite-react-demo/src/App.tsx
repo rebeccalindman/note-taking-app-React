@@ -1,23 +1,26 @@
-import './App.css'
-import Footer from './components/Footer/Footer'
-import Greetings from './components/Greetings/Greetings'
-import Header from './components/Header/Header'
+import './App.css';
 
-import ToDoItem from './components/ToDoItem'
+import AdaLovelace from './pages/AdaLovelace/AdaLovelace.tsx';
+import ToDo from './pages/ToDo/ToDo.tsx';
+import NavBar from './components/NavBar/NavBar.tsx';
+import Calculator from './pages/Caculator.tsx/Calculator.tsx';
+import ShoppingCart from './pages/ShoppingCart/ShoppingCart.tsx';
 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
-  const heading = "Hello World"
-
+  const navList = ['AdaLovelace', 'ToDo', 'Calculator', 'ShoppingCart'];
   return (
-  <>
-  < Header />
-  < Greetings />
-  < Greetings />
-  < Greetings />
-  < Footer />
-  </>
-  )
+      <Router>
+        <NavBar navList={navList} /> {/* inside router */}
+        <Routes>
+          <Route path="/AdaLovelace" element={<AdaLovelace />} />
+          <Route path="/ToDo" element={<ToDo />} />
+          <Route path="/Calculator" element={<Calculator />} />
+          <Route path="/ShoppingCart" element={<ShoppingCart />} />
+        </Routes>
+      </Router>
+  );
 }
 
-export default App /* det är dist-mappen som man vill deploya när man ska gå online */
+export default App;

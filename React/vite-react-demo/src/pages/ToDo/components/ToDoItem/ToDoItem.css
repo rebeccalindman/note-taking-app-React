@@ -1,0 +1,19 @@
+.to-do-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #eeeeee;
+}
+
+
+
+.to-do-item.done {
+    text-decoration: none;
+    color: #9d9d9d;
+    border: 1px solid #e1e1e1;
+}
+

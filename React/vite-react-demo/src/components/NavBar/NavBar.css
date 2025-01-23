@@ -1,0 +1,24 @@
+nav.nav-bar {
+    justify-items: center;
+}
+
+ul.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    list-style: none;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+li.nav-item > a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li.nav-item:hover > a {
+    text-decoration: underline;
+}

@@ -1,0 +1,22 @@
+.icon-button {
+    border: none;
+    padding: 4px;
+    border-radius: 999px;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+}
+
+.icon-button:hover {
+   /*  background-color: #ec5050; */
+}
+
+.icon-button svg path {
+    stroke: #fff;
+}
+
+.icon-button svg {
+    width: 24px;
+    height: 24px;
+/*     fill: #333; */
+}

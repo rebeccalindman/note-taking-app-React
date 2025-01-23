@@ -21,6 +21,7 @@ cd project-name
 - Header: Header-element som visar upp en text
 - Greetings: h1-element med texten 'Hello World'.
 - Footer: Footer-element som visar upp en text
+- LibaryOfBooks: h1-element med titel samt ul-element som listar li-element med förvalda böcker
 
 ## Bidra
 Skicka en pull request om du vill förbättra projektet.

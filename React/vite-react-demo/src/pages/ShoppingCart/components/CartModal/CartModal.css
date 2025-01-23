@@ -1,0 +1,21 @@
+.cart-product {
+    margin-bottom: 16px;
+  }
+  
+  .cart-product h4 {
+    margin: 0 0 8px;
+  }
+  
+  .cart-product p {
+    margin: 0 0 4px;
+  }
+  
+  .cart-product hr {
+    margin-top: 8px;
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+  }
+
+  
+  

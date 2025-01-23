@@ -1,0 +1,29 @@
+.second-header {
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 8px 2rem;
+    color: white;
+    background-color: black;
+}
+
+.items-in-cart {
+    color: white;
+    margin: 4px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.second-header h1 {
+    color: white;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    text-wrap: nowrap;
+}
+
+.cart-container {    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

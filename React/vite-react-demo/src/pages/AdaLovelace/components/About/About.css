@@ -1,0 +1,23 @@
+* { 
+    text-align: center;
+    font-family: 'Courier Sans', 'Bulletin Typewriter';
+}
+
+cite {
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0d1c50;
+    display: block;
+    background-color: aliceblue;
+
+}
+
+h1,h2 {
+    color: #462878;
+}
+
+img {
+    border: #0d1c50 3px solid;
+    border-radius: 9999px;
+}
