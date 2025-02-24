@@ -1,0 +1,13 @@
+/* HEADER STYLING */
+header {
+    padding: 1.5rem;
+    background-color: #0e4c47f8;
+    color: white;
+}
+
+h1 {
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    margin-left: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+}
