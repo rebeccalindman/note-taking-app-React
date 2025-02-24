@@ -2,9 +2,62 @@
 
 :root {
   font-family: monospace;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+}
+
+@theme {
+  --color-mint: #4bdfb5;
+  --color-mint-90: #4bdfb590;
+}
+
+
+@layer components {
+  .button {
+    @apply bg-mint hover:bg-mint-90 text-black font-bold py-2 px-4 rounded-xl;
+    @variant active {
+      @apply bg-black text-mint;
+    }
+  }
+
+  .button.secondary {
+    @apply bg-amber-300 hover:bg-amber-200;
+    @variant active {
+      @apply bg-black text-amber-300;
+    }
+  }
+
+  .card {
+    @apply my-4 bg-gray-800 p-4 w-80 flex flex-col gap-2 rounded-xl justify-between;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-amber-50 dark:bg-gray-900 text-black dark:text-white flex flex-col min-h-screen;
+  }
+  div#root {
+    @apply flex flex-col flex-1 h-full w-full items-center;
+  }
+  main {
+    @apply flex flex-col flex-1 h-full w-full max-w-3xl p-4 items-center;
+  }
+
+  nav .active {
+    @apply text-mint;
+  }
+
+  header {
+    @apply flex flex-row justify-between bg-white text-black dark:bg-gray-800 dark:text-white p-4 w-full;
+  }
+  footer {
+    @apply flex flex-row justify-between bg-white text-black dark:bg-gray-800 dark:text-white p-4 bottom-0 w-full;
+  }
+
+  h2 {
+    @apply text-2xl font-bold;
+  }
 }

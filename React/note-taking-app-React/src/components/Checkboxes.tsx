@@ -28,10 +28,10 @@ const Checkboxes: React.FC<CheckboxesProps> = ({ selectedCategories, setSelected
   };
 
   return (
-    <div className="checkbox-menu">
+    <div className="flex flex-row">
       {categories.map((category) => (
-        <label className="checkbox-label" key={category.id}>
-          <input
+        <label className="flex flex-row items-center" key={category.id}>
+          <input className="accent-mint m-2"
             type="checkbox"
             checked={selectedCategories.includes(category.id)}
             onChange={() => handleCheckboxChange(category.id)}

@@ -3,7 +3,7 @@ import Button from './Button';
 import { ButtonContainerProps } from '../types/buttonTypes';
 
 const ButtonContainer: React.FC<ButtonContainerProps> = ({ buttons }) => (
-  <div className="button-container">
+  <div className="flex flex-row gap-2.5 h-fit">
     {buttons.map((button, index) => (
       <Button
         key={index}

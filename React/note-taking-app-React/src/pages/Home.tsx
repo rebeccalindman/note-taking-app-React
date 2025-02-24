@@ -23,9 +23,12 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <NoteForm notes={notes} setNotes={setNotes} categories={categories} />
+        <h2>Create a note</h2>
+      <section className='card w-full'>
+        <NoteForm />
+      </section>
       <h2>Recent notes</h2>
-      <NoteList notes={notes} setNotes={setNotes} categories={categories} /> {/* ✅ Pass categories */}
+      <NoteList limit={2} /> {/* ✅ Pass categories */}
     </>
   );
 };

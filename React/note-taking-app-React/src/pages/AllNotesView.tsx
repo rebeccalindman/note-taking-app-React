@@ -6,7 +6,10 @@ interface AllNotesViewProps {}
 
 function AllNotesView(props: AllNotesViewProps) {
   return (
-    <NoteList />
+    <>
+      <h2>All notes</h2>
+      <NoteList />
+    </>
   )
 }
 

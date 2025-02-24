@@ -13,7 +13,7 @@ interface IconButtonContainerProps {
 }
 
 const IconButtonContainer: React.FC<IconButtonContainerProps> = ({ buttons }) => (
-  <div className="button-container">
+  <div className="flex flex-row gap-2">
     {buttons.map((button, index) => (
       <IconButton
         key={index}
